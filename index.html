@@ -1,244 +1,420 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Professional portfolio of Kowsalya, Learning and Development and education professional.">
-  <title>Kowsalya | Professional Portfolio</title>
-  <style>
-    :root {
-      --navy: #142b4a;
-      --blue: #315f91;
-      --ink: #243247;
-      --muted: #65758b;
-      --paper: #ffffff;
-      --soft: #f3f6fa;
-      --line: #dfe6ee;
-      --accent: #d5a85c;
-    }
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0; font-family: Arial, Helvetica, sans-serif;
-      color: var(--ink); background: var(--soft); line-height: 1.65;
-    }
-    a { color: inherit; }
-    .topbar {
-      background: var(--paper); border-bottom: 1px solid var(--line);
-      position: sticky; top: 0; z-index: 10;
-    }
-    .nav {
-      max-width: 1100px; margin: auto; padding: 14px 24px;
-      display: flex; justify-content: space-between; align-items: center; gap: 20px;
-    }
-    .brand { color: var(--navy); font-weight: 800; letter-spacing: .3px; }
-    nav { display: flex; flex-wrap: wrap; gap: 18px; }
-    nav a { text-decoration: none; color: var(--muted); font-size: .92rem; }
-    nav a:hover { color: var(--blue); }
-    .hero {
-      background: linear-gradient(120deg, #142b4a, #315f91);
-      color: white; padding: 86px 24px 78px;
-    }
-    .hero-inner { max-width: 1050px; margin: auto; }
-    .eyebrow { color: #f0d7a9; text-transform: uppercase; letter-spacing: 2px; font-size: .78rem; font-weight: 700; }
-    h1 { font-size: clamp(2.5rem, 6vw, 4.6rem); line-height: 1.08; margin: 12px 0; }
-    .hero p { max-width: 700px; font-size: 1.12rem; color: #e4ebf4; }
-    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
-    .btn {
-      display: inline-block; padding: 11px 18px; border-radius: 7px;
-      text-decoration: none; font-weight: 700; border: 1px solid transparent;
-    }
-    .btn-light { background: white; color: var(--navy); }
-    .btn-outline { color: white; border-color: #aabbd0; }
-    main { max-width: 1050px; margin: auto; padding: 48px 24px 70px; }
-    section { margin: 0 0 54px; scroll-margin-top: 90px; }
-    .section-kicker { color: var(--blue); font-size: .76rem; text-transform: uppercase; letter-spacing: 1.8px; font-weight: 800; }
-    h2 { color: var(--navy); font-size: 1.9rem; margin: 5px 0 18px; }
-    h3 { color: var(--navy); margin: 0 0 4px; }
-    .intro { max-width: 820px; color: var(--muted); }
-    .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
-    .card {
-      background: var(--paper); border: 1px solid var(--line); border-radius: 12px;
-      padding: 22px; box-shadow: 0 5px 18px rgba(20,43,74,.045);
-    }
-    .meta { color: var(--muted); font-size: .9rem; margin: 0 0 12px; }
-    ul { padding-left: 20px; margin: 10px 0 0; }
-    li { margin: 5px 0; }
-    .experience { display: grid; gap: 16px; }
-    .experience .card { border-left: 4px solid var(--accent); }
-    .skills { display: flex; flex-wrap: wrap; gap: 8px; }
-    .skill { background: white; border: 1px solid var(--line); padding: 9px 13px; border-radius: 7px; }
-    .contact {
-      background: var(--navy); color: white; border-radius: 14px; padding: 28px;
-    }
-    .contact h2 { color: white; }
-    .contact p { color: #dce5ef; }
-    footer { text-align: center; color: var(--muted); padding: 22px; font-size: .88rem; }
-    @media (max-width: 700px) {
-      .nav { align-items: flex-start; flex-direction: column; }
-      nav { gap: 10px 15px; }
-      .hero { padding: 64px 22px; }
-      main { padding: 36px 18px 55px; }
-      .grid { grid-template-columns: 1fr; }
-    }
-  </style>
-</head>
-<body>
-  <header class="topbar">
-    <div class="nav">
-      <div class="brand">KOWSALYA</div>
-      <nav aria-label="Main navigation">
-        <a href="#about">About</a>
-        <a href="#india">India Experience</a>
-        <a href="#japan">Japan Experience</a>
-        <a href="#skills">Skills</a>
-        <a href="#education">Education</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
-  </header>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>マライラジ・コウサリヤ | 職務経歴ポートフォリオ</title>
 
-  <div class="hero">
-    <div class="hero-inner">
-      <div class="eyebrow">Professional Portfolio</div>
-      <h1>Kowsalya</h1>
-      <p>Learning &amp; Development · LMS Administration · Training Coordination · English Education</p>
-      <p>Professional experience in LMS and training administration, English education, and educational content development.</p>
-      <div class="actions">
-        <a class="btn btn-light"
-           href="./(職務経歴書)_Malairaj%20Kowsalya.pdf"
-           download="職務経歴書.pdf">Download Japanese Resume (PDF)</a>
-        <a class="btn btn-outline" href="#experience">View Experience</a>
-      </div>
-    </div>
+<style>
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Arial, "Noto Sans JP", "Yu Gothic", Meiryo, sans-serif;
+  background: #f8fafc;
+  color: #1f2937;
+  line-height: 1.8;
+}
+
+a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+a:hover { text-decoration: underline; }
+
+nav {
+  background: white;
+  padding: 15px 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #e2e8f0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.brand {
+  font-weight: bold;
+  font-size: 20px;
+  color: #172554;
+}
+
+.navlinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.navlinks a {
+  color: #334155;
+  font-size: 14px;
+}
+
+.hero {
+  background: linear-gradient(130deg, #172554, #2563eb);
+  color: white;
+  padding: 75px 8%;
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin: 10px 0;
+}
+
+.hero p { max-width: 800px; }
+
+.button {
+  display: inline-block;
+  background: white;
+  color: #172554;
+  padding: 11px 18px;
+  border-radius: 8px;
+  font-weight: bold;
+  margin: 12px 8px 0 0;
+}
+
+main {
+  max-width: 1050px;
+  margin: auto;
+  padding: 35px 20px;
+}
+
+section {
+  background: white;
+  padding: 28px;
+  margin-bottom: 22px;
+  border-radius: 14px;
+  border: 1px solid #e2e8f0;
+}
+
+h2 {
+  color: #172554;
+  margin-top: 0;
+  border-bottom: 2px solid #dbeafe;
+  padding-bottom: 8px;
+}
+
+.job {
+  border-top: 1px solid #e2e8f0;
+  padding: 20px 0;
+}
+
+.job h3 {
+  margin-bottom: 3px;
+  color: #0f172a;
+}
+
+.date {
+  color: #64748b;
+  font-size: 14px;
+}
+
+.client {
+  color: #2563eb;
+  font-size: 14px;
+}
+
+li { margin-bottom: 10px; }
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+
+.skill {
+  background: #eff6ff;
+  color: #1e40af;
+  padding: 7px 13px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+.contact-box {
+  background: #eff6ff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  color: #64748b;
+}
+
+@media(max-width:700px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .hero h1 { font-size: 32px; }
+
+  .columns { grid-template-columns: 1fr; }
+
+  section { padding: 20px; }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <div class="brand">マライラジ・コウサリヤ</div>
+
+  <div class="navlinks">
+    <a href="#about">プロフィール</a>
+    <a href="#experience">職務経歴</a>
+    <a href="#skills">スキル</a>
+    <a href="#education">学歴・語学</a>
+    <a href="#contact">お問い合わせ</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <p>職務経歴ポートフォリオ</p>
+
+  <h1>マライラジ・コウサリヤ</h1>
+
+  <p>
+    人材育成・LMS管理・研修運営・英語教育
+  </p>
+
+  <p>
+    LMS管理、研修運営、ユーザーサポート、英語教育の経験を持つ
+    Learning &amp; Development分野の担当者です。
+  </p>
+
+  <a class="button"
+     href="./(職務経歴書)_Malairaj%20Kowsalya.pdf"
+     download="職務経歴書.pdf">
+    職務経歴書をダウンロード
+  </a>
+</header>
+
+<main>
+
+<section id="about">
+  <h2>プロフィール</h2>
+
+  <p>
+    人材育成・研修管理、LMSサポート、研修コーディネーション、
+    英語指導、教材開発の経験があります。
+  </p>
+
+  <p>
+    学習管理システムや各種サポートツールを活用し、
+    研修運営およびユーザーサポート業務に従事してきました。
+  </p>
+
+  <p>
+    <strong>使用ツール・プラットフォーム：</strong>
+    SuccessFactors LMS、Moodle LMS、HTML、Articulate Storyline、
+    ServiceNow、Quickbase、Sharpen、BMC Remedy
+  </p>
+</section>
+
+<section id="experience">
+  <h2>職務経歴</h2>
+
+  <div class="job">
+    <h3>Aptara</h3>
+    <strong>職種：研修スペシャリスト</strong>
+    <div class="date">2022年8月 ～ 2023年12月</div>
+    <p class="client">クライアント：米国 Cigna</p>
+
+    <ul>
+      <li>
+        HTMLを使用してLMSのコースページを作成し、
+        研修コンテンツが正しく表示されるか確認。
+      </li>
+      <li>
+        ServiceNowのチケットを管理し、
+        SLA期限の遵守およびレポート作成を担当。
+      </li>
+      <li>
+        Moodle LMSでユーザープロフィールを作成し、
+        ユーザーの問題を調査・解決。
+      </li>
+      <li>
+        Sharpenを使用して、問い合わせや顧客からの依頼に対応。
+      </li>
+      <li>
+        Microsoft Teamsを通じて、各地域のユーザーに
+        リアルタイムのサポートを提供。
+      </li>
+      <li>
+        社内関係者と連携し、週次の進捗報告を実施。
+      </li>
+    </ul>
   </div>
 
-  <main>
-    <section id="about">
-      <div class="section-kicker">Introduction</div>
-      <h2>About Me</h2>
-      <p class="intro">I am Kowsalya, a Learning and Development and education professional with experience in LMS administration, training support, English teaching, and educational material development. My technical experience includes HTML, SuccessFactor LMS, Moodle LMS, Articulate Storyline, ServiceNow, Quickbase, Sharpen, and BMC Remedy. I have supported users and teams working with international clients and learners.</p>
-    </section>
+  <div class="job">
+    <h3>GP Strategies</h3>
+    <strong>職種：LMSスペシャリスト</strong>
+    <div class="date">2021年3月 ～ 2022年8月</div>
+    <p class="client">クライアント：米国 Merck</p>
 
-    <section id="experience">
-      <div class="section-kicker">Career History</div>
-      <h2>Work Experience</h2>
+    <ul>
+      <li>
+        講師主導型研修（ILT）、ウェビナー、研修クラス、
+        関連資料およびSOPの設定・品質確認を担当。
+      </li>
+      <li>
+        コース情報の管理、受講登録、出席管理、
+        キャンセル処理を実施。
+      </li>
+      <li>
+        HTML形式の研修コンテンツが正しく表示されるか確認。
+      </li>
+      <li>
+        評価問題、アンケート、学習項目の割り当て、
+        クラススケジュールおよびユーザー情報を管理。
+      </li>
+      <li>
+        AICC・SCORMのバージョン管理およびレポート作成を担当。
+      </li>
+      <li>
+        Articulate Storylineを使用した学習コンテンツの作成。
+      </li>
+      <li>
+        WebExを利用したオンライン研修の運営をサポート。
+      </li>
+      <li>
+        顧客向けWeb研修をサポートする社内管理者への
+        トレーニングを実施。
+      </li>
+    </ul>
+  </div>
 
-      <section id="india">
-        <h3>India Experience</h3>
-        <div class="experience">
-          <article class="card">
-            <h3>Training Specialist — Aptara</h3>
-            <p class="meta">August 2022 – December 2023 · Client: Cigna, USA</p>
-            <ul>
-              <li>Created LMS course pages using HTML and checked the display of HTML-based training content.</li>
-              <li>Maintained SLA deadlines and generated reports for tickets in ServiceNow.</li>
-              <li>Created user profiles in Moodle LMS and troubleshot LMS-related issues.</li>
-              <li>Managed inbox enquiries and supported customer requests using Sharpen.</li>
-              <li>Provided on-call and live user support through MS Teams across different regions.</li>
-              <li>Shared weekly updates on solutions and communicated with internal customers.</li>
-            </ul>
-          </article>
-          <article class="card">
-            <h3>LMS Specialist — GP Strategies</h3>
-            <p class="meta">March 2021 – August 2022 · Client: Merck, USA</p>
-            <ul>
-              <li>Created, set up, and quality-checked ILT and webinar courses, classes, documents, and SOPs.</li>
-              <li>Maintained courses and managed class registrations, attendance, and cancellations.</li>
-              <li>Checked the display of HTML-based training content.</li>
-              <li>Prepared assessment questions and surveys, assigned learning items, scheduled classes, and maintained user records.</li>
-              <li>Managed versions of AICC/SCORM e-learning courses, documents, and SOPs, and generated reports.</li>
-              <li>Created content files using Articulate Storyline and supported virtual learning sessions through WebEx.</li>
-              <li>Trained internal administrators to support customer-facing web-based training.</li>
-            </ul>
-          </article>
-          <article class="card">
-            <h3>Home Scoring English Freelancer — Digital Nirvana</h3>
-            <p class="meta">December 2020 – December 2021</p>
-            <ul>
-              <li>Scored and corrected English essays written by students in Japan.</li>
-              <li>Guided students in improving communication skills and provided evaluations based on scoring criteria.</li>
-            </ul>
-          </article>
-        </div>
-      </section>
+  <h3>その他の職務経験</h3>
 
-      <section id="japan">
-        <h3>Japan Experience</h3>
-        <div class="experience">
-          <article class="card">
-            <h3>English Coordinator — Gakuhosha</h3>
-            <p class="meta">January 2025 – March 2025</p>
-            <ul>
-              <li>Developed and designed English-learning materials for different levels.</li>
-              <li>Created lesson plans, worksheets, quizzes, and activities.</li>
-              <li>Updated and improved materials based on student progress.</li>
-              <li>Worked with Japanese staff and handled work communication in Japanese.</li>
-            </ul>
-          </article>
-          <article class="card">
-            <h3>English Teacher — Global Indian International School</h3>
-            <p class="meta">September 2024 – December 2024</p>
-            <ul>
-              <li>Taught English to students aged 3 to 10.</li>
-              <li>Managed classes and prepared learning materials.</li>
-              <li>Assessed students, provided improvement guidance, and gave feedback to parents.</li>
-            </ul>
-          </article>
-        </div>
-      </section>
-    </section>
+  <div class="job">
+    <h3>Digital Nirvana</h3>
+    <strong>職種：英語エッセイ採点（在宅フリーランス）</strong>
+    <div class="date">2020年12月 ～ 2021年12月</div>
 
-    <section id="skills">
-      <div class="section-kicker">Capabilities</div>
-      <h2>Technical &amp; Professional Skills</h2>
-      <div class="skills">
-        <span class="skill">SuccessFactor LMS</span>
-        <span class="skill">Moodle LMS</span>
-        <span class="skill">HTML / CSS</span>
-        <span class="skill">Articulate Storyline</span>
-        <span class="skill">ServiceNow</span>
-        <span class="skill">Quickbase</span>
-        <span class="skill">Sharpen</span>
-        <span class="skill">BMC Remedy</span>
-        <span class="skill">SCORM / AICC</span>
-        <span class="skill">SQL</span>
-        <span class="skill">C / C++</span>
-        <span class="skill">MS Teams / WebEx</span>
-        <span class="skill">User Support</span>
-        <span class="skill">Communication</span>
-      </div>
-    </section>
+    <ul>
+      <li>日本の学生が作成した英語エッセイの採点と添削を担当。</li>
+      <li>コミュニケーション能力に関する指導を実施。</li>
+      <li>定められた評価基準に沿って学生の課題を評価。</li>
+    </ul>
+  </div>
 
-    <section id="education">
-      <div class="section-kicker">Academic Background</div>
-      <h2>Education &amp; Languages</h2>
-      <div class="grid">
-        <article class="card">
-          <h3>Bachelor’s Degree in Information Technology</h3>
-          <p class="meta">Four-year undergraduate degree</p>
-        </article>
-        <article class="card">
-          <h3>Languages</h3>
-          <p>English</p>
-          <p>Japanese — studied at ECC Japanese Language School.</p>
-        </article>
-      </div>
-    </section>
+  <div class="job">
+    <h3>Gakuhosha</h3>
+    <strong>職種：英語コーディネーター</strong>
+    <div class="date">2025年1月 ～ 2025年3月</div>
 
-    <section id="contact">
-      <div class="contact">
-        <div class="section-kicker">Get in Touch</div>
-        <h2>Contact Me</h2>
-        <p>Interested in opportunities in LMS administration, Learning &amp; Development, training coordination, HR administration, or education.</p>
-        <p>Please add your preferred professional email address and phone number here before publishing.</p>
-        <a class="btn btn-light"
-           href="./(職務経歴書)_Malairaj%20Kowsalya.pdf"
-           download="職務経歴書.pdf">Download Japanese Resume (PDF)</a>
-      </div>
-    </section>
-  </main>
+    <ul>
+      <li>
+        英語学習教材、授業計画、ワークシート、
+        小テストおよび学習アクティビティを作成。
+      </li>
+      <li>生徒の学習進捗に基づいて教材を改善。</li>
+      <li>日本人スタッフと連携し、業務上のコミュニケーションを実施。</li>
+    </ul>
+  </div>
 
-  <footer>© 2026 Kowsalya · Professional Portfolio</footer>
+  <div class="job">
+    <h3>Global Indian International School</h3>
+    <strong>職種：英語教師</strong>
+    <div class="date">2024年9月 ～ 2024年12月</div>
+
+    <ul>
+      <li>3歳から10歳までの子どもを対象に英語を指導。</li>
+      <li>クラス運営および授業用教材の準備を担当。</li>
+      <li>生徒の学習進捗を評価し、保護者へのフィードバックを実施。</li>
+    </ul>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>スキル</h2>
+
+  <div class="skills">
+    <span class="skill">SuccessFactors LMS</span>
+    <span class="skill">Moodle LMS</span>
+    <span class="skill">HTML / CSS</span>
+    <span class="skill">Articulate Storyline</span>
+    <span class="skill">ServiceNow</span>
+    <span class="skill">Quickbase</span>
+    <span class="skill">Sharpen</span>
+    <span class="skill">BMC Remedy</span>
+    <span class="skill">SCORM / AICC</span>
+    <span class="skill">SQL</span>
+    <span class="skill">C / C++</span>
+    <span class="skill">Microsoft Teams / WebEx</span>
+    <span class="skill">ユーザーサポート</span>
+    <span class="skill">コミュニケーション</span>
+  </div>
+</section>
+
+<section id="education">
+  <h2>学歴・語学</h2>
+
+  <div class="columns">
+    <div>
+      <h3>学歴</h3>
+
+      <p>
+        <strong>情報技術学士</strong>
+      </p>
+
+      <p>4年制大学課程を修了。</p>
+    </div>
+
+    <div>
+      <h3>語学</h3>
+
+      <p><strong>英語</strong></p>
+
+      <p>
+        <strong>日本語</strong><br>
+        ECC日本語学院で学習。
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>お問い合わせ</h2>
+
+  <div class="contact-box">
+    <p>
+      LMS管理、人材育成・研修、研修コーディネーション、
+      人事事務、教育分野での仕事に関心があります。
+    </p>
+
+    <p>メールまたは電話でお気軽にお問い合わせください。</p>
+
+    <p><strong>メール：</strong> ここにメールアドレスを入力</p>
+    <p><strong>電話番号：</strong> ここに電話番号を入力</p>
+
+    <a href="./(職務経歴書)_Malairaj%20Kowsalya.pdf"
+       download="職務経歴書.pdf">
+      日本語の職務経歴書をダウンロード
+    </a>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  © 2026 マライラジ・コウサリヤ
+  <br>
+  職務経歴ポートフォリオ
+</footer>
+
 </body>
 </html>
